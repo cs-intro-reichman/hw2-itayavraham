@@ -12,6 +12,7 @@ public class CalcPi {
 			piApprox -= 1/denominator;
 			denominator+=2; // adds 2 to the denominator in accordance with the equation
 		}
-		System.out.println("pi according to Java: "+Math.PI+" pi, approximated:     "+4*piApprox);
+		System.out.println("pi according to Java: "+Math.PI);
+		System.out.println("pi, approximated:     "+4*piApprox);
 	}
 }
