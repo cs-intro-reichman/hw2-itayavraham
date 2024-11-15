@@ -15,7 +15,8 @@ public  class  TestRandom {
 		System.out.println("> 0.5: " + counterAboveHalf + " times");
 		System.out.println("<= 0.5: " + counterBelowHalf + " times");
 		if (counterAboveHalf != 0 && counterBelowHalf != 0) {
-			ratio = (double)counterAboveHalf / counterBelowHalf;
+			// We wanna make sure the ratio is always smaller than 1 :
+			ratio = (counterAboveHalf <  counterBelowHalf) ? ((double)counterAboveHalf / counterBelowHalf) : ((double)counterBelowHalf / counterAboveHalf);
 			System.out.println("ratio: " + ratio);		
 		}
 
